@@ -1,0 +1,38 @@
+@font-face{ /*llamamos y creamos una fuente (se busca la fuente, se descarga se pega en la carpeta fonts)*/
+font-family: Domine;
+src:url(fonts/Domine/static/Domine-Regular.ttf);
+}
+
+/*Estilos para barra de navegación*/
+nav {
+    font-family: Domine;
+    font-size: 15px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex; /*se posicionan las cajas una al lado de otra*/
+    justify-content: space-around; /*distribuye los elementos con un espacio*/
+}
+
+nav ul li{ 
+    display: inline-block; /*creo bloque donde los elementos se posicionan en linea (uno al lado del otro) */
+    text-decoration: none;
+    padding: 10px 30px;
+    border-bottom:black solid;
+    border-width: 1px;
+}
+
+.nav-enlace{
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width :600px){ /*breakpoint para tablet y menos (disp móviles)*/
+    nav ul{
+        flex-direction: column;
+    }
+}
+    
+
+/*Fin estilos barra de navegación*/
