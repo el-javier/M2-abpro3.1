@@ -3,10 +3,12 @@ font-family: Domine;
 src:url(fonts/Domine/static/Domine-Regular.ttf);
 }
 
+
 /*Estilos para barra de navegación*/
 nav {
     font-family: Domine;
     font-size: 15px;
+    clear:left ;
 }
 
 nav ul{
@@ -28,31 +30,59 @@ nav ul li{
     text-decoration: none;
 }
 
-/* clases para noticias */
-.noticias {width: 25%;
-float: left;}
-
 @media (max-width :600px){ /*breakpoint para tablet y menos (disp móviles)*/
     nav ul{
         flex-direction: column;
     }
 }
-
-@media only screen and (min-width: 600px) {
-    
-}
-
-@media only screen and (min-width: 768px) {
-    
-}
-
-@media only screen and (min-width: 992px) {
-    
-}
-
-@media only screen and (min-width: 1200px) {
-    
-}
     
 
 /*Fin estilos barra de navegación*/
+
+/*Inicio Estilo Noticias en index*/
+
+.noticias { 
+    width: 17%;
+    float: left;
+    padding: 3%;
+    background-color: rgb(245, 245, 245);
+    margin: 1%;
+    border-radius: 10px;
+}
+img { width:100%;
+}
+
+@media (max-width :600px){
+    .noticias { 
+        width: 100%;
+    } 
+}
+/*Fin Estilo Noticias en index*/
+
+/*Inicio Estilo Cabecera en index*/
+
+.titulos{
+    float: left;
+}
+
+.logo { 
+    width:250px;
+    padding: 40px;
+    float: left;
+}
+
+@media (max-width :600px){
+    .logo { 
+        width: 200px;
+        padding: 0px;
+    }
+    .titulos {
+        text-align: center;
+    }
+}
+/*Fin Estilo Cabecera en index*/
+footer{
+    clear:left ;
+    padding: 20px;
+    background-color: beige;
+}
